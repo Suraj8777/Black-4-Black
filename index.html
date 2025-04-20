@@ -3,52 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sub4Sub</title>
+    <title>Sub4Sub Platform</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Header -->
     <header>
-        <div class="logo">Sub4Sub</div>
-        <nav>
-            <ul>
-                <li><a href="#" id="home-link">Home</a></li>
-                <li><a href="#" id="requests-link">Requests</a></li>
-                <li><a href="#" id="logout-link">Logout</a></li>
-            </ul>
-        </nav>
+        <h1>Sub4Sub Platform</h1>
+        <p>Exchange subscriptions with other YouTubers</p>
     </header>
-
-    <!-- Main Container -->
-    <div class="container">
-        <!-- Sidebar with User Profile -->
-        <aside class="sidebar">
-            <div class="profile">
-                <img id="profile-img" src="" alt="Profile Image">
-                <h2 id="profile-name"></h2>
-                <p>Subscribers: <span id="profile-subscribers"></span></p>
-            </div>
-        </aside>
-
-        <!-- Main Content -->
-        <main>
-            <!-- Home Section: List of Users -->
-            <section id="home-section">
-                <h1>Users Looking for Sub4Sub</h1>
-                <div id="users-list"></div>
-            </section>
-
-            <!-- Requests Section -->
-            <section id="requests-section" style="display: none;">
-                <h1>Subscription Requests</h1>
-                <h2>Incoming Requests</h2>
-                <div id="incoming-requests"></div>
-                <h2>Outgoing Requests</h2>
-                <div id="outgoing-requests"></div>
-            </section>
-        </main>
-    </div>
-
+    <main>
+        <section id="form-section">
+            <h2>Submit Your Channel</h2>
+            <form id="channel-form">
+                <label for="channel-url">Your YouTube Channel URL:</label>
+                <input type="url" id="channel-url" name="channel-url" placeholder="e.g., https://youtube.com/@yourchannel" required>
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        <section id="channels-section">
+            <h2>Available Channels</h2>
+            <ul id="channel-list"></ul>
+        </section>
+    </main>
+    <footer>
+        <p><strong>Disclaimer:</strong> Sub4Sub practices are discouraged by YouTube and may violate their Terms of Service. Using this platform could harm your channel’s growth or lead to account suspension. Consider focusing on genuine content creation instead.</p>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
