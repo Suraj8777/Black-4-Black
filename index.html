@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sub4Sub</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">Sub4Sub</div>
+        <nav>
+            <ul>
+                <li><a href="#" id="home-link">Home</a></li>
+                <li><a href="#" id="requests-link">Requests</a></li>
+                <li><a href="#" id="logout-link">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <div class="container">
+        <!-- Sidebar with User Profile -->
+        <aside class="sidebar">
+            <div class="profile">
+                <img id="profile-img" src="" alt="Profile Image">
+                <h2 id="profile-name"></h2>
+                <p>Subscribers: <span id="profile-subscribers"></span></p>
+            </div>
+        </aside>
+
+        <!-- Main Content -->
+        <main>
+            <!-- Home Section: List of Users -->
+            <section id="home-section">
+                <h1>Users Looking for Sub4Sub</h1>
+                <div id="users-list"></div>
+            </section>
+
+            <!-- Requests Section -->
+            <section id="requests-section" style="display: none;">
+                <h1>Subscription Requests</h1>
+                <h2>Incoming Requests</h2>
+                <div id="incoming-requests"></div>
+                <h2>Outgoing Requests</h2>
+                <div id="outgoing-requests"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
